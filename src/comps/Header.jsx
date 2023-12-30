@@ -14,7 +14,7 @@ const Header=(props)=>{
     return(
         <header>
             <div className="inner-header">
-                <Link to={"/rest-countries-api/"}><h1>Where in the world?</h1></Link>
+                <Link to={"/rest-countries-api"}><h1>Where in the world?</h1></Link>
                 <div className="luminosity-btn" onClick={lightModeClick}>
                     <img src={img} alt="Crescent" /><p> Dark Mode</p>
                 </div>
