@@ -49,6 +49,7 @@ const App=()=>{
         <BrowserRouter>
             <div className={isDark?"app-container dark":"app-container"}>
                 <Header childClick={changeLumMode} isDark={isDark}/>
+                <p>***********************teeeesttinnngggg*************************</p>
                 <Routes>
                     <Route path="/" element={countryList===null && !failedFetch?<Loading/>:failedFetch?<p style={{fontSize:"1.5rem",padding:"2rem"}}>Error:Make sure you are connected to the internet</p>:<Home countryList={countryList} isDark={isDark}/>}/>
                     <Route path="/country/:code" element={<CountryDetails countryList={countryList}  isDark={isDark}/> } key={window.location.pathname}/>
