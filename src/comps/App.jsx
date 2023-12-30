@@ -51,7 +51,7 @@ const App=()=>{
                 <Header childClick={changeLumMode} isDark={isDark}/>
                 <Routes location="/home">
                     <Route path="/home">
-                        <Route path="/country/:code" element={<CountryDetails countryList={countryList}  isDark={isDark}/> } key={window.location.pathname}/>
+                        <Route path="/home/country/:code" element={<CountryDetails countryList={countryList}  isDark={isDark}/> } key={window.location.pathname}/>
                         <Route index element={countryList===null && !failedFetch?<Loading/>:failedFetch?<p style={{fontSize:"1.5rem",padding:"2rem"}}>Error:Make sure you are connected to the internet</p>:<Home countryList={countryList} isDark={isDark}/>}/>
                     </Route>
                 </Routes>
