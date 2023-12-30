@@ -13,7 +13,7 @@ const CountryCard=(props)=>{
     }
 
     return(
-        <Link to={`/rest-countries-api/country/${props.country.cca3}`}>
+        <Link to={`rest-countries-api/country/${props.country.cca3}`}>
             <div className="country-card-container">
                 <img className="flag-img" src={props.country.flags.png} alt={props.country.flags.alt} />
                 <div className="inner-text">
