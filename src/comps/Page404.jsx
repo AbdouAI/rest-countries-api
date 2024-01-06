@@ -10,7 +10,7 @@ const Page404=()=>{
             <p className="text-404">
                 You've strayed too far from earth.
             </p>
-            <Link className="link-404" to={"/"}>Go Back</Link>
+            <Link className="link-404" to={"/rest-countries-api"}>Go Back</Link>
         </div>
     )
 }
